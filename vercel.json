@@ -1,4 +1,146 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/feed",
+      "destination": "/feed.xml",
+      "permanent": true
+    },
+    {
+      "source": "/from-ceo-to-chief-belief-officer",
+      "destination": "/blog/from-ceo-to-chief-belief-officer",
+      "permanent": true
+    },
+    {
+      "source": "/manager-accountability-how-leaders-replace-pressure-with-predictability",
+      "destination": "/blog/manager-accountability-how-leaders-replace-pressure-with-predictability",
+      "permanent": true
+    },
+    {
+      "source": "/how-managers-build-a-proactive-culture-that-lasts",
+      "destination": "/blog/how-managers-build-a-proactive-culture-that-lasts",
+      "permanent": true
+    },
+    {
+      "source": "/operationalize-belief",
+      "destination": "/blog/operationalize-belief",
+      "permanent": true
+    },
+    {
+      "source": "/the-hidden-revenue-plateau-how-your-managers-fix-it",
+      "destination": "/blog/the-hidden-revenue-plateau-how-your-managers-fix-it",
+      "permanent": true
+    },
+    {
+      "source": "/accomplishment-at-work",
+      "destination": "/blog/accomplishment-at-work",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-high-performance-sales-culture",
+      "destination": "/blog/creating-a-high-performance-sales-culture",
+      "permanent": true
+    },
+    {
+      "source": "/relational-sales-approach-hidden-revenue",
+      "destination": "/blog/relational-sales-approach-hidden-revenue",
+      "permanent": true
+    },
+    {
+      "source": "/the-cost-of-disengaged-employees",
+      "destination": "/blog/the-cost-of-disengaged-employees",
+      "permanent": true
+    },
+    {
+      "source": "/declining-sales-hidden-cause",
+      "destination": "/blog/declining-sales-hidden-cause",
+      "permanent": true
+    },
+    {
+      "source": "/business-development-culture-outgrow",
+      "destination": "/blog/business-development-culture-outgrow",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-vs-sales-hire-sales-consistency",
+      "destination": "/blog/outgrow-vs-sales-hire-sales-consistency",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-change-sales-behaviors",
+      "destination": "/blog/outgrow-change-sales-behaviors",
+      "permanent": true
+    },
+    {
+      "source": "/how-outgrow-changes-sales-behaviors",
+      "destination": "/blog/outgrow-change-sales-behaviors",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-proactive-sales-culture",
+      "destination": "/blog/outgrow-proactive-sales-culture",
+      "permanent": true
+    },
+    {
+      "source": "/how-outgrow-creates-proactive-sales-culture",
+      "destination": "/blog/outgrow-proactive-sales-culture",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-advisor-vs-diy",
+      "destination": "/blog/outgrow-advisor-vs-diy",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-sales-mindset-vs-training",
+      "destination": "/blog/outgrow-sales-mindset-vs-training",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-vs-traditional-sales-training",
+      "destination": "/blog/outgrow-sales-mindset-vs-training",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-revenue-growth-strategy-signs",
+      "destination": "/blog/outgrow-revenue-growth-strategy-signs",
+      "permanent": true
+    },
+    {
+      "source": "/5-signs-your-company-is-ready-for-outgrow",
+      "destination": "/blog/outgrow-revenue-growth-strategy-signs",
+      "permanent": true
+    },
+    {
+      "source": "/outgrow-revenue-expansion-system",
+      "destination": "/blog/outgrow-revenue-expansion-system",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-outgrow-revenue-growth-system",
+      "destination": "/blog/outgrow-revenue-expansion-system",
+      "permanent": true
+    },
+    {
+      "source": "/2025/05/03/what-is-outgrow-revenue-growth-system",
+      "destination": "/blog/outgrow-revenue-expansion-system",
+      "permanent": true
+    },
+    {
+      "source": "/sales-habit-to-build-predictable-revenue",
+      "destination": "/blog/sales-habit-to-build-predictable-revenue",
+      "permanent": true
+    },
+    {
+      "source": "/sales-growth-formula-that-works",
+      "destination": "/blog/sales-growth-formula-that-works",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-obstacle-blocking-your-competitive-sales-edge",
+      "destination": "/blog/hidden-obstacle-blocking-your-competitive-sales-edge",
+      "permanent": true
+    }
+  ]
 }

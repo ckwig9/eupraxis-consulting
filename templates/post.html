@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}} | Eupraxis Consulting</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="article:published_time" content="{{DATE_ISO}}">
+<link rel="alternate" type="application/rss+xml" title="Eupraxis Consulting blog" href="../feed.xml">
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Rubik:wght@400;500;600&family=Caveat:wght@500;600&display=swap">
+<link rel="stylesheet" href="../css/style.css?v=20260923b">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body>
+
+{{CHROME_TOP}}<main>
+<article class="post-page">
+  <header class="post-hero">
+    <div class="wrap">
+      <a class="back" href="../blog.html" data-reveal="fade"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 8H3M7 4L3 8l4 4"/></svg>All posts</a>
+      <p class="eyebrow" data-reveal="fade">{{CAT_LINE}}</p>
+      <h1 data-reveal>{{TITLE}}</h1>
+      <div class="byline" data-reveal="fade">
+        <img class="avatar" src="../assets/brand/craig2.jpg" alt="" width="36" height="36">
+        <span><b>Craig Wigginton</b></span>
+        <span aria-hidden="true">&middot;</span>
+        <time datetime="{{DATE_ISO}}">{{DATE_HUMAN}}</time>
+        <span aria-hidden="true">&middot;</span>
+        <span>{{READ_TIME}} min read</span>
+      </div>
+    </div>
+  </header>
+
+  {{HERO_IMAGE}}
+
+  <div class="article">
+{{BODY}}
+  </div>
+
+  <footer class="post-end">
+    <a class="btn btn-ghost" href="../blog.html"><span>Back to all posts</span></a>
+    <button class="btn btn-dark js-contact" type="button" data-topic="Blog reader">Talk to Craig
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </button>
+  </footer>
+</article>
+
+<section class="section post-more">
+  <div class="wrap">
+    <div class="posts-head">
+      <div>
+        <p class="eyebrow" data-reveal="fade">Keep reading</p>
+        <h2 class="h-l" data-reveal>More from the whiteboard</h2>
+      </div>
+      <a class="btn btn-ghost" href="../blog.html" data-reveal="fade"><span>All posts</span>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+    <div class="posts">
+{{RELATED}}    </div>
+  </div>
+</section>
+</main>
+
+{{CHROME_BOTTOM}}</body>
+</html>

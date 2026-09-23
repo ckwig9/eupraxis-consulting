@@ -44,7 +44,9 @@ def strip_tags(s):
 
 
 def clean_body(h, img_map, slug_map):
-    # Wrapper divs (Gutenberg spacers, Elementor containers) carry no content.
+    # Block-editor comments (<!-- wp:paragraph -->) and wrapper divs (Gutenberg
+    # spacers, Elementor containers) carry no content.
+    h = re.sub(r"<!--.*?-->", "", h, flags=re.S)
     h = re.sub(r"<div\b[^>]*>|</div>", "", h)
     # Drop presentational attributes.
     h = re.sub(r'\s(?:%s|data-[\w-]+)="[^"]*"' % "|".join(STRIP_ATTRS), "", h)
@@ -90,10 +92,14 @@ def clean_body(h, img_map, slug_map):
             return 'href="%s.html"' % slug_map[path]
         return m.group(0)
     h = re.sub(r'href="([^"]+)"', fix_link, h)
+    # Internal links should open in the same tab; drop target/rel left over from WP.
+    h = re.sub(r'(<a href="(?:\.\./)?[\w\-]+\.html")[^>]*>', r"\1>", h)
+    h = re.sub(r"\n[ \t]+", "\n", h)
 
     # Empty paragraphs and stray breaks.
     h = re.sub(r"<p>(?:\s|&nbsp;|<br\s*/?>)*</p>", "", h)
     h = re.sub(r"<p>\s*<br\s*/?>", "<p>", h)
+    h = re.sub(r"[ \t]+\n", "\n", h)
     h = re.sub(r"\n{3,}", "\n\n", h).strip()
     return h, series
 

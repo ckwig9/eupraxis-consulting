@@ -10,7 +10,7 @@
   /* ---------- GoHighLevel form endpoint ----------
      Replace with the GHL inbound webhook URL (Automations > Workflows > Inbound Webhook).
      Fields sent as JSON: name, email, phone, message, topic, page, submitted_at. */
-  var GHL_WEBHOOK_URL = '';
+  var GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/mKzJ6Xo8E96vdYBZ5QLS/webhook-trigger/84dc6cef-062f-40ce-9d0e-5a930c22b486';
 
   /* ---------- anchor links ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
@@ -224,8 +224,13 @@
       btn.disabled = true; btn.textContent = 'Sending…';
       var done = function () { form.classList.add('is-done'); };
       if (GHL_WEBHOOK_URL) {
+        var fail = function () {
+          btn.disabled = false; btn.textContent = 'Try again';
+          var note = form.querySelector('.fine');
+          if (note) note.innerHTML = 'That didn&#8217;t go through. Please email <a href="mailto:craig@eupraxisconsulting.com">craig@eupraxisconsulting.com</a> directly.';
+        };
         fetch(GHL_WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
-          .then(done).catch(function () { btn.disabled = false; btn.textContent = 'Try again'; });
+          .then(function (r) { if (r.ok) { done(); } else { fail(); } }).catch(fail);
       } else {
         // No endpoint configured yet: simulate success so the UX can be reviewed.
         console.info('[Eupraxis] Form data (GHL webhook not configured):', data);
