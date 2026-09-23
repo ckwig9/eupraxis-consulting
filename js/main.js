@@ -10,7 +10,7 @@
   /* ---------- GoHighLevel form endpoint ----------
      Replace with the GHL inbound webhook URL (Automations > Workflows > Inbound Webhook).
      Fields sent as JSON: name, email, phone, message, topic, page, submitted_at. */
-  var GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/mKzJ6Xo8E96vdYBZ5QLS/webhook-trigger/84dc6cef-062f-40ce-9d0e-5a930c22b486';
+  var GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/mKzJ6Xo8E96vdYBZ5QLS/webhook-trigger/2765ff3d-e9ac-4b80-91e5-bdbbaef8aaf2';
 
   /* ---------- anchor links ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
