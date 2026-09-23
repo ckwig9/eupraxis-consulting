@@ -1,0 +1,3 @@
+# Netlify / Cloudflare Pages style redirects. Craig will send the two WordPress URLs.
+# /old-wordpress-slug/    /blog.html    301
+# /another-old-slug/      /blog.html    301

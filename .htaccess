@@ -1,0 +1,3 @@
+# Apache equivalent (if hosted on cPanel/WordPress-style hosting). Craig will send the two URLs.
+# Redirect 301 /old-wordpress-slug/ https://eupraxisconsulting.com/blog.html
+# Redirect 301 /another-old-slug/   https://eupraxisconsulting.com/blog.html

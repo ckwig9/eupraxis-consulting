@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 0 430 440">
+  <mask id="c" maskUnits="userSpaceOnUse" x="280" y="0" width="430" height="440">
+    <rect x="280" y="0" width="430" height="440" fill="#fff"/>
+    <line x1="438" y1="104" x2="596" y2="444" stroke="#000" stroke-width="15" stroke-linecap="round"/>
+  </mask>
+  <path fill="#133D5F" fill-rule="evenodd" mask="url(#c)" d="M492 12 L702 435 L288 435 Z M432 128 L558 382 L386 382 Z"/>
+</svg>
